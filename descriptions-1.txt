@@ -1,0 +1,58 @@
+
+Program Overview:
+The Phonebook Manager program is designed to manage a phone book, allowing
+users to create, store, and manipulate contact information. Users can add,
+edit, and remove entries, as well as check if a specific entry exists in
+the phone book. The program provides a text-based menu interface for these
+operations.
+Implementation Details:
+ListNode Class:
+The ListNode class represents an individual contact entry in the phone
+book.
+It stores contact information such as first name, last name, address,
+city, and phone number.
+The get and set methods are used to access and modify the information
+fields.
+The toString method formats the contact information for display.
+PhonebookManager Class:
+The PhonebookManager class manages a collection of contact entries.
+It uses an ArrayList to store ListNode objects, providing dynamic storage
+for the phone book entries.
+The class includes methods for adding, editing, and removing entries.
+Methods like contains allow checking for the existence of a contact based
+on different criteria.
+The toString method formats the entire phone book for display.
+TestClass (Main Class):
+The TestClass class contains the main method, serving as the entry point
+for the program.
+It provides an introductory message and displays a menu of options for
+interacting with the phone book.
+User input is processed, and appropriate methods from the PhonebookManager
+class are called based on the selected option.
+Main Program Flow:
+The program starts with an introduction message, explaining its purpose.
+The user is presented with a menu of options, including adding, removing,
+editing, and checking entries, as well as viewing the phone book and
+checking its size.
+Depending on the user's choice, the program calls the corresponding
+methods in the PhonebookManager class.
+Users can add contact information, specify an index for adding or removing
+entries, and edit existing entries.
+The program allows users to check if an entry exists in the phone book.
+Users can view the entire phone book and its size.
+The program continues to run until the user chooses to quit.
+Key Features:
+The program uses the ArrayList data structure to store contact entries,
+allowing for dynamic resizing.
+Error handling is in place to handle invalid user input, such as non-
+integer values or out-of-bound indices.
+The program provides a user-friendly text-based interface for managing the
+phone book.
+Improvements and Considerations:
+The program could benefit from data validation, such as ensuring phone
+numbers are in the correct format.
+It currently stores contact information in memory, which means data is not
+persistent between program runs. Storing data in a file for persistence
+might be a valuable enhancement.
+Sorting and searching functionality could be added for more advanced
+operations.
